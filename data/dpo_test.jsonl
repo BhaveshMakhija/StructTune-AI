@@ -1,0 +1,2 @@
+{"prompt": "Extract name: Alice is here.", "chosen": "{\"name\": \"Alice\"}", "rejected": "Alice is here."}
+{"prompt": "Extract city: Bob lives in London.", "chosen": "{\"city\": \"London\"}", "rejected": "{\"name\": \"Bob\"}"}
