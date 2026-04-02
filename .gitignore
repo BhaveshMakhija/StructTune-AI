@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Data & Models
+data/dataset.jsonl
+models/
+output/
+
+# Frontend
+node_modules/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
