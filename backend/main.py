@@ -1,3 +1,5 @@
+import os
+import json
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -35,16 +37,36 @@ def create_app():
         """
         global model, tokenizer
         try:
-            # If no model is loaded, we return a mock or placeholder info.
-            # Real model loading on CPU takes seconds/minutes.
             if model is None:
                 return {
                     "result": f"{request.instruction}: {request.input_text}",
-                    "info": "Model not loaded in RAM yet."
+                    "info": "Model loading deferred for RAM efficiency."
                 }
             
             response = generate_response(model, tokenizer, request.instruction, request.input_text)
             return {"result": response}
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=str(e))
+
+    @app.get("/metrics")
+    async def get_metrics():
+        """
+        Get the latest evaluation metrics from storage.
+        """
+        try:
+            results_dir = "evaluation/results"
+            if not os.path.exists(results_dir):
+                return {"error": "No evaluation results found."}
+            
+            files = [f for f in os.listdir(results_dir) if f.endswith(".json")]
+            if not files:
+                return {"error": "No metrics available."}
+            
+            latest_file = sorted(files)[-1]
+            with open(os.path.join(results_dir, latest_file), "r") as f:
+                content = json.load(f)
+            
+            return {"latest": content, "filename": latest_file}
         except Exception as e:
             raise HTTPException(status_code=500, detail=str(e))
             

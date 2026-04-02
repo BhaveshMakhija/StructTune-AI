@@ -16,6 +16,10 @@ output/
 # Frontend
 node_modules/
 dist/
+build/
+.npm/
+.yarn/
+package-lock.json
 
 # Test Artifacts
 .pytest_cache/
@@ -24,3 +28,4 @@ tests/__pycache__/
 test_*.py
 *_test.py
 test_results/
+evaluation/results/
