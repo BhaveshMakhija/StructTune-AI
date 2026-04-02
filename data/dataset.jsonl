@@ -1,0 +1,150 @@
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Paris.", "output": "{\"name\": \"Alice\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Paris.", "output": "{\"name\": \"Eve\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in New York.", "output": "{\"name\": \"Frank\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Mumbai.", "output": "{\"name\": \"Eve\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in London.", "output": "{\"name\": \"Eve\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Berlin.", "output": "{\"name\": \"Frank\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Paris.", "output": "{\"name\": \"Grace\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in New York.", "output": "{\"name\": \"Eve\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Tokyo.", "output": "{\"name\": \"Alice\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in London.", "output": "{\"name\": \"Alice\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in London.", "output": "{\"name\": \"Eve\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Tokyo.", "output": "{\"name\": \"Charlie\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Paris.", "output": "{\"name\": \"Alice\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Paris.", "output": "{\"name\": \"Eve\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in London.", "output": "{\"name\": \"David\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Paris.", "output": "{\"name\": \"David\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Berlin.", "output": "{\"name\": \"Bob\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Mumbai.", "output": "{\"name\": \"Eve\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in New York.", "output": "{\"name\": \"Frank\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in London.", "output": "{\"name\": \"Frank\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Paris.", "output": "{\"name\": \"Alice\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in London.", "output": "{\"name\": \"Eve\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in New York.", "output": "{\"name\": \"Eve\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in New York.", "output": "{\"name\": \"Eve\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Paris.", "output": "{\"name\": \"Charlie\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Tokyo.", "output": "{\"name\": \"David\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Berlin.", "output": "{\"name\": \"Charlie\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in London.", "output": "{\"name\": \"Charlie\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Paris.", "output": "{\"name\": \"David\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Paris.", "output": "{\"name\": \"Bob\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Mumbai.", "output": "{\"name\": \"David\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in New York.", "output": "{\"name\": \"David\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Mumbai.", "output": "{\"name\": \"Charlie\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in New York.", "output": "{\"name\": \"Frank\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Tokyo.", "output": "{\"name\": \"Grace\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Paris.", "output": "{\"name\": \"Alice\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Berlin.", "output": "{\"name\": \"Eve\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Berlin.", "output": "{\"name\": \"Frank\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in New York.", "output": "{\"name\": \"Alice\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Berlin.", "output": "{\"name\": \"Alice\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in New York.", "output": "{\"name\": \"Alice\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in New York.", "output": "{\"name\": \"Charlie\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Berlin.", "output": "{\"name\": \"Eve\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in New York.", "output": "{\"name\": \"David\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in London.", "output": "{\"name\": \"Eve\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Tokyo.", "output": "{\"name\": \"David\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Tokyo.", "output": "{\"name\": \"Grace\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in New York.", "output": "{\"name\": \"Grace\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Tokyo.", "output": "{\"name\": \"Grace\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Berlin.", "output": "{\"name\": \"Grace\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Tokyo.", "output": "{\"name\": \"Alice\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Mumbai.", "output": "{\"name\": \"Bob\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in New York.", "output": "{\"name\": \"Charlie\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in New York.", "output": "{\"name\": \"Grace\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in London.", "output": "{\"name\": \"Grace\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in London.", "output": "{\"name\": \"Frank\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Mumbai.", "output": "{\"name\": \"Charlie\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in London.", "output": "{\"name\": \"Grace\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in New York.", "output": "{\"name\": \"Grace\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in New York.", "output": "{\"name\": \"Bob\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Paris.", "output": "{\"name\": \"Bob\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in New York.", "output": "{\"name\": \"Eve\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Paris.", "output": "{\"name\": \"Alice\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Paris.", "output": "{\"name\": \"Eve\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in New York.", "output": "{\"name\": \"Frank\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in New York.", "output": "{\"name\": \"Bob\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Paris.", "output": "{\"name\": \"Charlie\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Paris.", "output": "{\"name\": \"Grace\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in London.", "output": "{\"name\": \"Alice\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Tokyo.", "output": "{\"name\": \"Frank\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in London.", "output": "{\"name\": \"Charlie\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in London.", "output": "{\"name\": \"Alice\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in New York.", "output": "{\"name\": \"Alice\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Mumbai.", "output": "{\"name\": \"Bob\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Mumbai.", "output": "{\"name\": \"Bob\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Berlin.", "output": "{\"name\": \"Bob\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Tokyo.", "output": "{\"name\": \"Grace\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in London.", "output": "{\"name\": \"Frank\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Paris.", "output": "{\"name\": \"Frank\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in New York.", "output": "{\"name\": \"Bob\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Paris.", "output": "{\"name\": \"Charlie\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Mumbai.", "output": "{\"name\": \"Bob\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Berlin.", "output": "{\"name\": \"Eve\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in London.", "output": "{\"name\": \"Frank\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in New York.", "output": "{\"name\": \"Alice\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Tokyo.", "output": "{\"name\": \"Grace\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Tokyo.", "output": "{\"name\": \"Frank\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Berlin.", "output": "{\"name\": \"Charlie\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Berlin.", "output": "{\"name\": \"Alice\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Mumbai.", "output": "{\"name\": \"David\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Mumbai.", "output": "{\"name\": \"Frank\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Mumbai.", "output": "{\"name\": \"David\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Mumbai.", "output": "{\"name\": \"Alice\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Berlin.", "output": "{\"name\": \"Alice\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Tokyo.", "output": "{\"name\": \"Eve\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Tokyo.", "output": "{\"name\": \"David\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in London.", "output": "{\"name\": \"Grace\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in London.", "output": "{\"name\": \"Eve\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Berlin.", "output": "{\"name\": \"David\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Paris.", "output": "{\"name\": \"Frank\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Berlin.", "output": "{\"name\": \"David\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Paris.", "output": "{\"name\": \"Charlie\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Mumbai.", "output": "{\"name\": \"Bob\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Mumbai.", "output": "{\"name\": \"Grace\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in New York.", "output": "{\"name\": \"Bob\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Paris.", "output": "{\"name\": \"Charlie\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Berlin.", "output": "{\"name\": \"Eve\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Paris.", "output": "{\"name\": \"Grace\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in London.", "output": "{\"name\": \"Frank\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Paris.", "output": "{\"name\": \"Bob\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Tokyo.", "output": "{\"name\": \"Charlie\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Berlin.", "output": "{\"name\": \"Eve\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Mumbai.", "output": "{\"name\": \"Frank\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Tokyo.", "output": "{\"name\": \"Charlie\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Berlin.", "output": "{\"name\": \"Eve\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Berlin.", "output": "{\"name\": \"Grace\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Mumbai.", "output": "{\"name\": \"Grace\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Tokyo.", "output": "{\"name\": \"David\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Paris.", "output": "{\"name\": \"David\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Paris.", "output": "{\"name\": \"Bob\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in New York.", "output": "{\"name\": \"Eve\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Tokyo.", "output": "{\"name\": \"Frank\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Berlin.", "output": "{\"name\": \"Frank\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Mumbai.", "output": "{\"name\": \"Charlie\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Grace lives in Berlin.", "output": "{\"name\": \"Grace\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Paris.", "output": "{\"name\": \"Alice\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Tokyo.", "output": "{\"name\": \"Charlie\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Berlin.", "output": "{\"name\": \"Bob\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Paris.", "output": "{\"name\": \"Bob\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in Tokyo.", "output": "{\"name\": \"Alice\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Paris.", "output": "{\"name\": \"Charlie\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in London.", "output": "{\"name\": \"Charlie\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Paris.", "output": "{\"name\": \"Frank\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Mumbai.", "output": "{\"name\": \"Charlie\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Mumbai.", "output": "{\"name\": \"Charlie\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Mumbai.", "output": "{\"name\": \"David\", \"city\": \"Mumbai\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in Tokyo.", "output": "{\"name\": \"Eve\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in London.", "output": "{\"name\": \"Charlie\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in London.", "output": "{\"name\": \"David\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in New York.", "output": "{\"name\": \"Alice\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in New York.", "output": "{\"name\": \"David\", \"city\": \"New York\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Tokyo.", "output": "{\"name\": \"David\", \"city\": \"Tokyo\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Berlin.", "output": "{\"name\": \"David\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Charlie lives in Berlin.", "output": "{\"name\": \"Charlie\", \"city\": \"Berlin\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "David lives in Paris.", "output": "{\"name\": \"David\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Bob lives in Paris.", "output": "{\"name\": \"Bob\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in London.", "output": "{\"name\": \"Frank\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Eve lives in London.", "output": "{\"name\": \"Eve\", \"city\": \"London\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Frank lives in Paris.", "output": "{\"name\": \"Frank\", \"city\": \"Paris\"}"}
+{"instruction": "Extract person name and city into JSON format.", "input": "Alice lives in London.", "output": "{\"name\": \"Alice\", \"city\": \"London\"}"}
