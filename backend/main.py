@@ -1,23 +1,53 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+from training.inference import generate_response
+import torch
+
+class InferenceRequest(BaseModel):
+    instruction: str
+    input_text: str
+    model_name: str = "sft"
+
+# Shared model state
+model = None
+tokenizer = None
 
 def create_app():
     app = FastAPI(title="StructTune AI API")
     
-    # 1. Setup CORS for React Frontend
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"], # Allow all for local lab
+        allow_origins=["*"],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
     )
     
-    # 2. Endpoints
     @app.get("/")
     async def root():
         return {"status": "ok", "message": "StructTune AI Backend is running"}
     
+    @app.post("/infer")
+    async def infer(request: InferenceRequest):
+        """
+        Main inference endpoint for extraction tasks.
+        """
+        global model, tokenizer
+        try:
+            # If no model is loaded, we return a mock or placeholder info.
+            # Real model loading on CPU takes seconds/minutes.
+            if model is None:
+                return {
+                    "result": f"{request.instruction}: {request.input_text}",
+                    "info": "Model not loaded in RAM yet."
+                }
+            
+            response = generate_response(model, tokenizer, request.instruction, request.input_text)
+            return {"result": response}
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=str(e))
+            
     return app
 
 app = create_app()
