@@ -20,3 +20,6 @@ dist/
 # Test Artifacts
 .pytest_cache/
 tests/__pycache__/
+/tests/
+test_*.py
+*_test.py
