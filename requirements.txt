@@ -1,0 +1,18 @@
+# CORE ENGINE
+torch --index-url https://download.pytorch.org/whl/cpu
+transformers
+peft
+datasets
+accelerate
+
+# DATA & MATH
+pandas
+numpy
+scikit-learn
+tqdm
+
+# API BACKEND
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
