@@ -23,9 +23,6 @@ package-lock.json
 
 # Test Artifacts
 .pytest_cache/
-tests/__pycache__/
-/tests/
-test_*.py
-*_test.py
+tests/
 test_results/
 evaluation/results/
