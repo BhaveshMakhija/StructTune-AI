@@ -1,6 +1,7 @@
 # Python cache
 __pycache__/
 *.pyc
+*/__pycache__/
 
 # Virtual Environment
 venv/
@@ -16,6 +17,6 @@ output/
 node_modules/
 dist/
 
-# OS files
-.DS_Store
-Thumbs.db
+# Test Artifacts
+.pytest_cache/
+tests/__pycache__/
