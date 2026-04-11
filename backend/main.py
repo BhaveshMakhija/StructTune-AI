@@ -54,6 +54,8 @@ class ExtractRequest(BaseModel):
     text: str
     use_rag: bool = True
 
+from backend.observability import observer
+
 @app.post("/extract")
 async def extract_medical_data(request: ExtractRequest):
     logger.info(f"Received extraction request: {request.text[:50]}...")
@@ -78,14 +80,20 @@ async def extract_medical_data(request: ExtractRequest):
         try:
             extracted_json = json.loads(response_text)
         except:
-            # Fallback if model output is messy
             logger.warning("Model produced invalid JSON. Attempting cleanup.")
             extracted_json = {"error": "Invalid JSON format", "raw": response_text}
+
+        # Run Validation for Logging
+        val_res = judge.validate(request.text, extracted_json)
+        
+        # Log for Observability
+        observer.log_inference(request.text, extracted_json, val_res)
 
         return {
             "input": request.text,
             "context": context,
-            "extracted": extracted_json
+            "extracted": extracted_json,
+            "validation": val_res
         }
     except Exception as e:
         logger.error(f"Extraction failed: {e}")
