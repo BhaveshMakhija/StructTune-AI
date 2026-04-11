@@ -46,6 +46,7 @@ def field_accuracy(prediction, target):
 
 if __name__ == "__main__":
     # Test valid
-    print(f"Valid result (expected 1.0): {is_valid_json('{\"name\": \"John\"}')}")
+    test_json = '{"name": "John"}'
+    print(f"Valid result (expected 1.0): {is_valid_json(test_json)}")
     # Test invalid
     print(f"Invalid result (expected 0.0): {is_valid_json('invalid json text')}")
