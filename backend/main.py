@@ -1,132 +1,122 @@
-import os
-import sys
-import json
-import re
-import shutil
-
-# Project pathing
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from typing import List, Optional
+import json
+import logging
+import os
+import torch
 
-class InferenceRequest(BaseModel):
-    instruction: str
-    input_text: str
-    model_name: str = "sft"
+# Internal modules
+from rag.engine import RAGEngine
+from judge.validation import MedAuditJudge
+from training.model_loader import load_base_model
+from training.inference import generate_response
+from evaluation.metrics import is_valid_json
 
-class dataEntry(BaseModel):
-    instruction: str
-    input: str
-    output: str
+# Setup Logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger("MedAudit-API")
 
-app = FastAPI(title="StructTune AI: Continuous Learning Lab")
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
+app = FastAPI(title="StructTune MedAudit API", version="1.0.0")
 
-RESULTS_DIR = "evaluation/results"
-MEMORY_FILE = os.path.join(RESULTS_DIR, "memory_bank.json")
-METRICS_FILE = os.path.join(RESULTS_DIR, "session_metrics.json")
+# Global State
+model = None
+tokenizer = None
+rag_engine = RAGEngine()
+judge = MedAuditJudge()
 
-def load_memory():
-    if os.path.exists(MEMORY_FILE):
-        with open(MEMORY_FILE, "r") as f: return json.load(f)
-    return {}
-
-def save_memory(mem):
-    os.makedirs(RESULTS_DIR, exist_ok=True)
-    with open(MEMORY_FILE, "w") as f: json.dump(mem, f)
-
-def dynamic_semantic_extraction(text):
-    memory = load_memory()
-    for sample_text, entities in memory.items():
-        if sample_text.lower() in text.lower(): return entities
-            
-    noise = {"long", "busy", "very", "great", "small", "big", "fast", "look", "day", "night", "week", "year"}
-    blacklist = {"Look", "Hi", "She", "He", "It", "They"}
-    
-    proper_nouns = [w for w in re.findall(r'\b[A-Z][a-z]+\b', text) if w not in blacklist]
-    name = proper_nouns[0] if proper_nouns else "User"
-    
-    city_match = re.search(r'(?:in|at|to)\s+([A-Z][a-z]+)', text)
-    city = city_match.group(1) if city_match else (proper_nouns[1] if len(proper_nouns) > 1 else "Unknown")
-    
-    age = (re.findall(r'\b\s?(\d{1,2})\s?\b', text) or ["N/A"])[0]
-
-    job = "Unknown"
-    findings = re.findall(r'(?:is a|as a|being a|am a|works as)\s+([A-Za-z]+)', text, re.IGNORECASE)
-    if findings:
-        for f in findings:
-            if f.lower() not in noise:
-                job = f.capitalize()
-                break
-    
-    if job == "Unknown":
-        secondary_match = re.search(r'\b(?:a|an)\b\s+(?:[a-z]+\s+)?([A-Z][a-z]+)', text)
-        if secondary_match: job = secondary_match.group(1)
-
-    return {"name": name, "city": city, "age": age, "occupation": job}
-
-@app.post("/api/infer")
-async def infer(request: InferenceRequest):
-    entities = dynamic_semantic_extraction(request.input_text)
-    
-    # Simulate evaluation (Zero-Chat check, Key Consistency)
-    valid_json = True
-    hallucination_score = 100
-    if request.model_name == "base":
-        result = f"Hello. I've read: {request.input_text}. I see {entities['name']}, {entities['age']}, in {entities['city']} as a {entities['occupation']}."
-        valid_json = False
-        hallucination_score = 65
-    elif request.model_name == "sft":
-        result = json.dumps({"extraction": {"p_name": entities["name"], "loc": entities["city"], "years": entities["age"], "job": entities["occupation"]}}, indent=2)
-        hallucination_score = 88
-    else: # DPO
-        result = json.dumps({"name": entities["name"], "age": int(entities["age"]) if entities["age"].isdigit() else entities["age"], "city": entities["city"], "occupation": entities["occupation"], "status": "aligned_v4"}, indent=4)
-        hallucination_score = 99
-
-    return {
-        "result": result,
-        "evaluation": {
-            "is_valid": valid_json,
-            "hallucination_score": hallucination_score
-        }
-    }
-
-@app.post("/api/add_data")
-async def add_data(entry: dataEntry):
-    memory = load_memory()
+@app.on_event("startup")
+async def startup_event():
+    global model, tokenizer
+    logger.info("Initializing MedAudit System...")
     try:
-        out_json = json.loads(entry.output)
-        memory[entry.input] = {
-            "name": out_json.get("name") or out_json.get("p_name"),
-            "city": out_json.get("city") or out_json.get("loc"),
-            "age": str(out_json.get("age") or out_json.get("years")),
-            "occupation": out_json.get("occupation") or out_json.get("job")
+        # Check if adapter exists, else load base
+        base_model, tokenizer = load_base_model()
+        adapter_path = "./models/medaudit-adapter"
+        if os.path.exists(adapter_path):
+            from peft import PeftModel
+            logger.info(f"Loading LoRA adapter from {adapter_path}")
+            model = PeftModel.from_pretrained(base_model, adapter_path)
+        else:
+            logger.warning("No LoRA adapter found. Using base TinyLlama.")
+            model = base_model
+        
+        logger.info("Initializing RAG index...")
+        if not rag_engine.load_index():
+            logger.info("RAG index not found. Building initial index...")
+            rag_engine.build_index(num_samples=100)
+            
+        logger.info("MedAudit Backend Ready.")
+    except Exception as e:
+        logger.error(f"Startup failed: {e}")
+
+class ExtractRequest(BaseModel):
+    text: str
+    use_rag: bool = True
+
+@app.post("/extract")
+async def extract_medical_data(request: ExtractRequest):
+    logger.info(f"Received extraction request: {request.text[:50]}...")
+    try:
+        context = ""
+        if request.use_rag:
+            logger.info("Retrieving context from MedQuad...")
+            retrieved = rag_engine.retrieve(request.text)
+            context = "\n".join(retrieved)
+            logger.info(f"Retrieved {len(retrieved)} context blocks.")
+
+        instruction = (
+            "Extract medical information (patient_name, age, diagnosis, medications, symptoms) "
+            "from the input text into JSON format."
+        )
+        if context:
+            instruction += f"\nUse the following context for grounding:\n{context}"
+
+        response_text = generate_response(model, tokenizer, instruction, request.text)
+        
+        # Parse JSON
+        try:
+            extracted_json = json.loads(response_text)
+        except:
+            # Fallback if model output is messy
+            logger.warning("Model produced invalid JSON. Attempting cleanup.")
+            extracted_json = {"error": "Invalid JSON format", "raw": response_text}
+
+        return {
+            "input": request.text,
+            "context": context,
+            "extracted": extracted_json
         }
-        save_memory(memory)
-    except: pass
-    
-    m = {"avg_valid_json": 0.95, "avg_field_accuracy": 0.92, "hallucination_rate": 0.04, "total_samples": 100}
-    if os.path.exists(METRICS_FILE):
-        with open(METRICS_FILE, "r") as f: m = json.load(f)
-    m["total_samples"] += 1
-    m["avg_field_accuracy"] = min(0.999, m["avg_field_accuracy"] + 0.003)
-    m["hallucination_rate"] = max(0.001, m["hallucination_rate"] - 0.001)
-    save_metrics(m)
-    return {"status": "ok"}
+    except Exception as e:
+        logger.error(f"Extraction failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/metrics")
-async def get_metrics():
-    if os.path.exists(METRICS_FILE):
-        with open(METRICS_FILE, "r") as f: return {"latest": json.load(f)}
-    return {"latest": {"avg_valid_json": 0.94, "avg_field_accuracy": 0.92, "hallucination_rate": 0.05, "total_samples": 0}}
+@app.post("/validate")
+async def validate_extraction(data: dict):
+    logger.info("Received validation request.")
+    try:
+        input_text = data.get("input", "")
+        extracted_json = data.get("extracted", {})
+        
+        validation_result = judge.validate(input_text, extracted_json)
+        return validation_result
+    except Exception as e:
+        logger.error(f"Validation failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
-@app.delete("/api/logs")
-async def delete_logs():
-    if os.path.exists(MEMORY_FILE): os.remove(MEMORY_FILE)
-    if os.path.exists(METRICS_FILE): os.remove(METRICS_FILE)
-    return {"status": "ok"}
+@app.get("/metrics")
+async def get_latest_metrics():
+    logger.info("Fetching latest evaluation metrics.")
+    try:
+        metrics_path = "evaluation/results/medaudit_latest.json"
+        if os.path.exists(metrics_path):
+            with open(metrics_path, "r") as f:
+                return json.load(f)
+        else:
+            return {"status": "No evaluation data found. Run evaluation script first."}
+    except Exception as e:
+        logger.error(f"Metrics fetch failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     import uvicorn
