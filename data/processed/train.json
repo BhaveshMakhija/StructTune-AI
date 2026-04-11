@@ -1,0 +1,5961 @@
+[
+  {
+    "input": "Clinical Note: Robert Smith (65y/o) reporting headache, nausea, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "65",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "nausea",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 73 years old, presents with fever, nausea, shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "73",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "nausea",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 64 years old, presents with headache, shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "64",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 78 years old, presents with cough, fever, headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "78",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fever",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (34y/o) reporting fatigue, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "34",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (42y/o) reporting joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "42",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 80. Symptoms observed: fever, shortness of breath, joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "80",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (69y/o) reporting cough, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "69",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 33. Symptoms observed: cough, joint pain, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "33",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "joint pain",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (49y/o) reporting fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "49",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 23 years old, presents with headache, dizziness, nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "23",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "dizziness",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 46 years old, presents with headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 42 years old, presents with shortness of breath, dizziness, fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "42",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "dizziness",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (20y/o) reporting shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "20",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 20. Symptoms observed: nausea, cough, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "20",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "cough",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (21y/o) reporting fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "21",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 29 years old, presents with shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "29",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 52. Symptoms observed: fatigue, shortness of breath, joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "52",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 27 years old, presents with cough, headache, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "27",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "headache",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 20. Symptoms observed: nausea, fever, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "20",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "fever",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 51 years old, presents with headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "51",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 26 years old, presents with dizziness, fatigue, nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "26",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fatigue",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 58. Symptoms observed: fatigue, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "58",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 69. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "69",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (43y/o) reporting shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "43",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 34 years old, presents with shortness of breath, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "34",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 30. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "30",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 54 years old, presents with cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "54",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 45. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "45",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 35 years old, presents with joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "35",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (64y/o) reporting dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "64",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (35y/o) reporting nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "35",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 38. Symptoms observed: headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "38",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 73. Symptoms observed: shortness of breath, nausea, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "73",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "nausea",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (40y/o) reporting cough, fever, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "40",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fever",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 35 years old, presents with headache, joint pain, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "35",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "joint pain",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 26 years old, presents with fever, shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "26",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 46. Symptoms observed: headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (34y/o) reporting cough, shortness of breath, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "34",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "shortness of breath",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 47 years old, presents with fever, nausea, headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "nausea",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 75. Symptoms observed: nausea, fever, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "75",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "fever",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (51y/o) reporting fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "51",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (63y/o) reporting headache, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "63",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 25 years old, presents with fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "25",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (47y/o) reporting nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 53 years old, presents with fatigue, joint pain, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "53",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "joint pain",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (58y/o) reporting headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "58",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 44 years old, presents with joint pain, fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "44",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 42 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "42",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (64y/o) reporting dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "64",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 54. Symptoms observed: dizziness, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "54",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 69 years old, presents with joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "69",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 29 years old, presents with joint pain, shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "29",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (75y/o) reporting dizziness, fever, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "75",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fever",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 21 years old, presents with joint pain, nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "21",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 71 years old, presents with cough, shortness of breath, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "71",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 24 years old, presents with cough, fever, nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "24",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fever",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (61y/o) reporting headache, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "61",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 30. Symptoms observed: dizziness, joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "30",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 80 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "80",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 53. Symptoms observed: joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "53",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 71 years old, presents with shortness of breath, nausea, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "71",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "nausea",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 65. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "65",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 55 years old, presents with cough, shortness of breath, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "55",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "shortness of breath",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 73. Symptoms observed: headache, dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "73",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 65 years old, presents with fever, headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "65",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (35y/o) reporting dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "35",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 52. Symptoms observed: fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "52",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (47y/o) reporting cough, fatigue, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fatigue",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 45 years old, presents with dizziness, fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "45",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 63. Symptoms observed: joint pain, shortness of breath, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "63",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "shortness of breath",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 56. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "56",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (42y/o) reporting cough, dizziness, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "42",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "dizziness",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 72. Symptoms observed: joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "72",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 62. Symptoms observed: fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "62",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 79 years old, presents with cough, headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "79",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (38y/o) reporting joint pain, fatigue, cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "38",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "fatigue",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 64 years old, presents with cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "64",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 54 years old, presents with fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "54",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 21 years old, presents with cough, joint pain, fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "21",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "joint pain",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 52. Symptoms observed: fatigue, cough, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "52",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "cough",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 78 years old, presents with fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "78",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 78. Symptoms observed: headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "78",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (75y/o) reporting headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "75",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 58. Symptoms observed: headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "58",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (58y/o) reporting headache, joint pain, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "58",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "joint pain",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (47y/o) reporting joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 50 years old, presents with fatigue, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "50",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 72 years old, presents with dizziness, shortness of breath, fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "72",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "shortness of breath",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 23. Symptoms observed: headache, dizziness, fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "23",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "dizziness",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 40 years old, presents with nausea, dizziness, shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "40",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "dizziness",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 40 years old, presents with nausea, dizziness, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "40",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "dizziness",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (52y/o) reporting headache, shortness of breath, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "52",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "shortness of breath",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 32 years old, presents with shortness of breath, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "32",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 38 years old, presents with joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "38",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 55 years old, presents with nausea, shortness of breath, fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "55",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "shortness of breath",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (25y/o) reporting joint pain, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "25",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (22y/o) reporting nausea, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "22",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (55y/o) reporting joint pain, nausea, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "55",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "nausea",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 23. Symptoms observed: joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "23",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 71. Symptoms observed: dizziness, joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "71",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 58 years old, presents with dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "58",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 39. Symptoms observed: cough, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "39",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (77y/o) reporting dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "77",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (47y/o) reporting nausea, cough, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "cough",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (71y/o) reporting headache, shortness of breath, cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "71",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "shortness of breath",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 38. Symptoms observed: cough, fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "38",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (49y/o) reporting dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "49",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 65 years old, presents with nausea, shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "65",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 44. Symptoms observed: joint pain, headache, dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "44",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "headache",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (51y/o) reporting nausea, joint pain, headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "51",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "joint pain",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 78. Symptoms observed: fatigue, joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "78",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 47 years old, presents with shortness of breath, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 20 years old, presents with fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "20",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 54 years old, presents with fever, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "54",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (26y/o) reporting fever, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "26",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (47y/o) reporting nausea, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (69y/o) reporting fatigue, headache, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "69",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "headache",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 80 years old, presents with nausea, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "80",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (40y/o) reporting shortness of breath, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "40",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 26. Symptoms observed: fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "26",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 30. Symptoms observed: dizziness, headache, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "30",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "headache",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 57 years old, presents with joint pain, nausea, fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "57",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "nausea",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (67y/o) reporting fever, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "67",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (27y/o) reporting fever, shortness of breath, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "27",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "shortness of breath",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 35. Symptoms observed: headache, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "35",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (80y/o) reporting shortness of breath, cough, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "80",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "cough",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (74y/o) reporting fatigue, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "74",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 34 years old, presents with headache, joint pain, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "34",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "joint pain",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 25. Symptoms observed: cough, shortness of breath, nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "25",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "shortness of breath",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 60 years old, presents with joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "60",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 32. Symptoms observed: joint pain, headache, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "32",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "headache",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (29y/o) reporting dizziness, headache, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "29",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "headache",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 22 years old, presents with shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "22",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 33. Symptoms observed: fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "33",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 47 years old, presents with joint pain, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 21 years old, presents with dizziness, fever, nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "21",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fever",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 39. Symptoms observed: joint pain, dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "39",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (69y/o) reporting shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "69",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 27. Symptoms observed: fatigue, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "27",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 41 years old, presents with fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "41",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (73y/o) reporting fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "73",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 24. Symptoms observed: joint pain, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "24",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (37y/o) reporting headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "37",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 58. Symptoms observed: fever, headache, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "58",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "headache",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 43. Symptoms observed: joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "43",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 66 years old, presents with nausea, fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "66",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 56 years old, presents with nausea, fatigue, headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "56",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "fatigue",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (20y/o) reporting fatigue, joint pain, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "20",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "joint pain",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 42. Symptoms observed: dizziness, shortness of breath, fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "42",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "shortness of breath",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (46y/o) reporting nausea, headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (48y/o) reporting nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "48",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 48. Symptoms observed: dizziness, nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "48",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (53y/o) reporting headache, fatigue, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "53",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "fatigue",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 75 years old, presents with fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "75",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (66y/o) reporting shortness of breath, nausea, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "66",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "nausea",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (54y/o) reporting fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "54",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 58. Symptoms observed: dizziness, nausea, fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "58",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "nausea",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (34y/o) reporting joint pain, cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "34",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (72y/o) reporting joint pain, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "72",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 37 years old, presents with joint pain, fatigue, fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "37",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "fatigue",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 47. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (28y/o) reporting cough, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "28",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 68 years old, presents with cough, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "68",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (43y/o) reporting joint pain, headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "43",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (63y/o) reporting joint pain, shortness of breath, cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "63",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "shortness of breath",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (48y/o) reporting joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "48",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 63 years old, presents with nausea, headache, shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "63",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "headache",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 49. Symptoms observed: fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "49",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 80. Symptoms observed: fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "80",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 66. Symptoms observed: shortness of breath, joint pain, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "66",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "joint pain",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (63y/o) reporting headache, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "63",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 36. Symptoms observed: shortness of breath, fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "36",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (59y/o) reporting shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "59",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 52. Symptoms observed: joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "52",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (44y/o) reporting fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "44",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (25y/o) reporting fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "25",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 26 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "26",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 71. Symptoms observed: joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "71",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 22 years old, presents with dizziness, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "22",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (77y/o) reporting dizziness, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "77",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 79. Symptoms observed: nausea, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "79",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (46y/o) reporting dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 79 years old, presents with dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "79",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 53. Symptoms observed: joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "53",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 57 years old, presents with cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "57",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (38y/o) reporting fatigue, dizziness, headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "38",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "dizziness",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 31 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "31",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 78. Symptoms observed: cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "78",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 24. Symptoms observed: fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "24",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 50. Symptoms observed: dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "50",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (31y/o) reporting cough, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "31",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 29. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "29",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 67. Symptoms observed: cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "67",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (43y/o) reporting joint pain, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "43",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (39y/o) reporting joint pain, headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "39",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 79 years old, presents with headache, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "79",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 30 years old, presents with cough, nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "30",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 52. Symptoms observed: dizziness, fatigue, joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "52",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fatigue",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (51y/o) reporting nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "51",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (68y/o) reporting headache, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "68",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 65. Symptoms observed: dizziness, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "65",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (76y/o) reporting fever, cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "76",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (74y/o) reporting joint pain, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "74",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 20 years old, presents with fever, headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "20",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (46y/o) reporting joint pain, fever, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "fever",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 55 years old, presents with joint pain, dizziness, headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "55",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "dizziness",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 46. Symptoms observed: dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 31. Symptoms observed: fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "31",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (73y/o) reporting fever, fatigue, cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "73",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "fatigue",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 40. Symptoms observed: fatigue, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "40",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (53y/o) reporting shortness of breath, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "53",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 50. Symptoms observed: dizziness, joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "50",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (53y/o) reporting nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "53",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 61. Symptoms observed: fever, fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "61",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (49y/o) reporting fatigue, fever, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "49",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "fever",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 57. Symptoms observed: cough, nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "57",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 52 years old, presents with cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "52",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 57 years old, presents with dizziness, cough, fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "57",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "cough",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 55. Symptoms observed: shortness of breath, nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "55",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 21 years old, presents with fatigue, shortness of breath, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "21",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 50. Symptoms observed: cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "50",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 55 years old, presents with fever, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "55",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 69 years old, presents with headache, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "69",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 42. Symptoms observed: cough, joint pain, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "42",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "joint pain",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (61y/o) reporting fatigue, fever, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "61",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "fever",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 58 years old, presents with cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "58",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (53y/o) reporting cough, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "53",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 33. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "33",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (51y/o) reporting dizziness, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "51",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 62. Symptoms observed: headache, dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "62",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 23. Symptoms observed: nausea, joint pain, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "23",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "joint pain",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (35y/o) reporting shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "35",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (55y/o) reporting fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "55",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 80. Symptoms observed: nausea, fever, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "80",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "fever",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 27. Symptoms observed: headache, nausea, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "27",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "nausea",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (72y/o) reporting nausea, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "72",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (76y/o) reporting headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "76",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (77y/o) reporting joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "77",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (63y/o) reporting joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "63",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (25y/o) reporting joint pain, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "25",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 41. Symptoms observed: cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "41",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (72y/o) reporting cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "72",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (32y/o) reporting nausea, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "32",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (33y/o) reporting nausea, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "33",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 70. Symptoms observed: nausea, fever, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "70",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "fever",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 61 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "61",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 64 years old, presents with fever, headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "64",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 65 years old, presents with shortness of breath, fatigue, headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "65",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "fatigue",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 47. Symptoms observed: cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (40y/o) reporting fever, cough, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "40",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "cough",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 47. Symptoms observed: fever, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 38 years old, presents with cough, joint pain, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "38",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "joint pain",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (28y/o) reporting fatigue, headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "28",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 66 years old, presents with fatigue, nausea, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "66",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "nausea",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 39. Symptoms observed: nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "39",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 46. Symptoms observed: nausea, joint pain, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "joint pain",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (49y/o) reporting nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "49",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (49y/o) reporting headache, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "49",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 78. Symptoms observed: fever, joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "78",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 24 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "24",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (66y/o) reporting nausea, cough, headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "66",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "cough",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 57 years old, presents with dizziness, cough, nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "57",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "cough",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (40y/o) reporting nausea, shortness of breath, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "40",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "shortness of breath",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 78. Symptoms observed: nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "78",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 23 years old, presents with shortness of breath, headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "23",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 36 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "36",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 66 years old, presents with dizziness, shortness of breath, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "66",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "shortness of breath",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (43y/o) reporting headache, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "43",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 21. Symptoms observed: nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "21",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (32y/o) reporting headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "32",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 44 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "44",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 50 years old, presents with shortness of breath, nausea, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "50",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "nausea",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 43 years old, presents with fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "43",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 76 years old, presents with fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "76",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 39. Symptoms observed: headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "39",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 57 years old, presents with fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "57",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 27 years old, presents with shortness of breath, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "27",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (48y/o) reporting cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "48",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (80y/o) reporting cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "80",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (61y/o) reporting dizziness, cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "61",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 62. Symptoms observed: shortness of breath, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "62",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (34y/o) reporting joint pain, fever, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "34",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "fever",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (47y/o) reporting cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (59y/o) reporting nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "59",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (24y/o) reporting fever, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "24",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 68 years old, presents with headache, dizziness, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "68",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "dizziness",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (40y/o) reporting cough, fatigue, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "40",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fatigue",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (37y/o) reporting fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "37",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (79y/o) reporting dizziness, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "79",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 29 years old, presents with nausea, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "29",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (29y/o) reporting headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "29",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 33 years old, presents with dizziness, cough, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "33",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "cough",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (46y/o) reporting headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 79 years old, presents with joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "79",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient James Moore, 44 years old, presents with fever, fatigue, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "44",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "fatigue",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 70. Symptoms observed: headache, cough, fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "70",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "cough",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 23. Symptoms observed: nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "23",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (77y/o) reporting shortness of breath, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "77",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 68 years old, presents with joint pain, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "68",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 79. Symptoms observed: shortness of breath, dizziness, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "79",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "dizziness",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (70y/o) reporting cough, shortness of breath, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "70",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "shortness of breath",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (44y/o) reporting dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "44",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 65. Symptoms observed: dizziness, fatigue, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "65",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fatigue",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 32 years old, presents with shortness of breath, joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "32",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (66y/o) reporting fever, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "66",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 65 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "65",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 44 years old, presents with fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "44",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (43y/o) reporting cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "43",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (41y/o) reporting fever, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "41",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (24y/o) reporting nausea, headache. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "24",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 27. Symptoms observed: joint pain, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "27",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (65y/o) reporting joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "65",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 57. Symptoms observed: fever, dizziness, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "57",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "dizziness",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 45 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "45",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 34 years old, presents with fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "34",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 32. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "32",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 72. Symptoms observed: joint pain, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "72",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (72y/o) reporting headache, shortness of breath, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "72",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (46y/o) reporting cough, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 38. Symptoms observed: dizziness, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "38",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 36. Symptoms observed: nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "36",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (75y/o) reporting dizziness, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "75",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 44 years old, presents with dizziness, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "44",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (77y/o) reporting nausea, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "77",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 74 years old, presents with fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "74",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 68. Symptoms observed: joint pain, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "68",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 44. Symptoms observed: fever, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "44",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 33 years old, presents with joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "33",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 28. Symptoms observed: joint pain, cough, dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "28",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "cough",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 77 years old, presents with fever, shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "77",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (76y/o) reporting cough, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "76",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (47y/o) reporting shortness of breath, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (27y/o) reporting fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "27",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (52y/o) reporting dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "52",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 23 years old, presents with joint pain, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "23",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 50. Symptoms observed: cough, dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "50",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 57. Symptoms observed: shortness of breath, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "57",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: David Jones (66y/o) reporting nausea, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "66",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 46 years old, presents with dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 28. Symptoms observed: cough, joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "28",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (22y/o) reporting dizziness, shortness of breath, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "22",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "shortness of breath",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 43. Symptoms observed: fever, dizziness, fatigue. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "43",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "dizziness",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (54y/o) reporting dizziness, fever. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "54",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 23 years old, presents with headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "23",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 41 years old, presents with headache. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "41",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 53. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "53",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (21y/o) reporting joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "21",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 56. Symptoms observed: nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "56",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Linda Taylor, Age: 65. Symptoms observed: dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "65",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 30. Symptoms observed: cough, nausea, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "30",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "nausea",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (80y/o) reporting fatigue, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "80",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Robert Smith (73y/o) reporting joint pain, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "73",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 61 years old, presents with fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "61",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 59. Symptoms observed: shortness of breath, dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "59",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (32y/o) reporting dizziness, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "32",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Jennifer Miller, Age: 41. Symptoms observed: fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "41",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 56. Symptoms observed: dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "56",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (37y/o) reporting headache, cough. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "37",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 55. Symptoms observed: fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "55",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 39. Symptoms observed: shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "39",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 47 years old, presents with cough, fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "47",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 44 years old, presents with headache, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "44",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 26. Symptoms observed: headache, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "26",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Robert Smith, 58 years old, presents with shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "58",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Maria Garcia, Age: 21. Symptoms observed: dizziness, shortness of breath, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "21",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "shortness of breath",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 67. Symptoms observed: fever, fatigue, cough. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "67",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fever",
+        "fatigue",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (63y/o) reporting joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "63",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 31. Symptoms observed: dizziness. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "31",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Elizabeth Wilson, Age: 54. Symptoms observed: headache, dizziness, nausea. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "54",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "dizziness",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 68 years old, presents with dizziness, shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "68",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (77y/o) reporting joint pain, shortness of breath, dizziness. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "77",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "shortness of breath",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (79y/o) reporting shortness of breath, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "79",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 52 years old, presents with shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "52",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 32 years old, presents with cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "32",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 20 years old, presents with fatigue, nausea, cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "20",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "nausea",
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 32 years old, presents with cough. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "32",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough"
+      ]
+    }
+  },
+  {
+    "input": "Subject: David Jones, Age: 28. Symptoms observed: fatigue, headache. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "28",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "headache"
+      ]
+    }
+  },
+  {
+    "input": "Subject: James Moore, Age: 76. Symptoms observed: headache, joint pain, fever. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "76",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "joint pain",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Elizabeth Wilson (51y/o) reporting cough, shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "51",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "cough",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 29 years old, presents with dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "29",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Patient David Jones, 34 years old, presents with joint pain. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "David Jones",
+      "age": "34",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Robert Smith, Age: 61. Symptoms observed: headache, shortness of breath. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Robert Smith",
+      "age": "61",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Linda Taylor, 66 years old, presents with shortness of breath, fever, fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "66",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "fever",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (25y/o) reporting fatigue, nausea. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "25",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (72y/o) reporting joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "72",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 37 years old, presents with shortness of breath, dizziness, fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "37",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "dizziness",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 71 years old, presents with headache, joint pain, fever. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "71",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "headache",
+        "joint pain",
+        "fever"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (49y/o) reporting dizziness, fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "49",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: James Moore (46y/o) reporting nausea, headache, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "James Moore",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea",
+        "headache",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 48 years old, presents with joint pain, fatigue, dizziness. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "48",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain",
+        "fatigue",
+        "dizziness"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Linda Taylor (51y/o) reporting shortness of breath, joint pain. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Linda Taylor",
+      "age": "51",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath",
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Subject: Michael Brown, Age: 35. Symptoms observed: joint pain. Confirmed Hypertension. Starting on Aspirin immediately.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "35",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "joint pain"
+      ]
+    }
+  },
+  {
+    "input": "Patient Jennifer Miller, 28 years old, presents with nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "28",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Jennifer Miller (48y/o) reporting fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Jennifer Miller",
+      "age": "48",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Maria Garcia (26y/o) reporting fatigue. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "26",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Maria Garcia, 46 years old, presents with dizziness, fatigue. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Maria Garcia",
+      "age": "46",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fatigue"
+      ]
+    }
+  },
+  {
+    "input": "Patient Elizabeth Wilson, 24 years old, presents with shortness of breath. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Elizabeth Wilson",
+      "age": "24",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "input": "Patient Michael Brown, 53 years old, presents with dizziness, fever, nausea. After examination, the patient was diagnosed with Hypertension and prescribed Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "53",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "dizziness",
+        "fever",
+        "nausea"
+      ]
+    }
+  },
+  {
+    "input": "Clinical Note: Michael Brown (23y/o) reporting shortness of breath. Primary diagnosis is Hypertension. Current treatment plan includes Aspirin.",
+    "output": {
+      "patient_name": "Michael Brown",
+      "age": "23",
+      "diagnosis": "Hypertension",
+      "medications": [
+        "Aspirin"
+      ],
+      "symptoms": [
+        "shortness of breath"
+      ]
+    }
+  }
+]
