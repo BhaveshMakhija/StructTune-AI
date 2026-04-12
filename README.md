@@ -1,8 +1,6 @@
 # 🩺 StructTune MedAudit
 
-### **Production-Grade Clinical Document Extraction & Validation System**
-
-![StructTune Banner](./assets/banner.png)
+### **Clinical Document Extraction & Validation System**
 
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -141,6 +139,3 @@ npm run dev
 
 
 ---
-
-> [!TIP]
-> **Interviewer Note:** The unique strength of this project is the **closed-loop validation**. Many AI apps trust the LLM implicitly; StructTune MedAudit assumes the LLM might hallucinate and treats it as a non-deterministic component that must be verified against ground truth (RAG) and deterministic rules (Judge).
