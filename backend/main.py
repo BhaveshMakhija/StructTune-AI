@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
 import json
@@ -18,6 +19,15 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger("MedAudit-API")
 
 app = FastAPI(title="StructTune MedAudit API", version="1.0.0")
+
+# Enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all origins for development
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Global State
 model = None
@@ -58,46 +68,80 @@ from backend.observability import observer
 
 @app.post("/extract")
 async def extract_medical_data(request: ExtractRequest):
-    logger.info(f"Received extraction request: {request.text[:50]}...")
+    import time
+    start_time = time.time()
+    
+    logger.info(f"--- CLINICAL EXTRACTION ---")
+    if not request.text.strip():
+        return {"error": "Empty input"}
+
     try:
-        context = ""
-        if request.use_rag:
-            logger.info("Retrieving context from MedQuad...")
-            retrieved = rag_engine.retrieve(request.text)
-            context = "\n".join(retrieved)
-            logger.info(f"Retrieved {len(retrieved)} context blocks.")
+        # SUPER MINIMAL PROMPT - Optimized for 1.1B stability
+        prompt = f"""
+Extract medical information from input text into valid JSON format.
+Output ONLY JSON. No explanation.
 
-        instruction = (
-            "Extract medical information (patient_name, age, diagnosis, medications, symptoms) "
-            "from the input text into JSON format."
+Rules:
+- Format: "patient_name", "age", "diagnosis", "medications", "symptoms"
+- If missing, use "" or []
+
+INPUT:
+{request.text}
+
+OUTPUT:
+"""
+
+        # INFERENCE - Deterministic
+        response_text = generate_response(
+            model, 
+            tokenizer, 
+            prompt, 
+            "", 
+            max_new_tokens=80, 
+            temperature=0.1, 
+            do_sample=False
         )
-        if context:
-            instruction += f"\nUse the following context for grounding:\n{context}"
-
-        response_text = generate_response(model, tokenizer, instruction, request.text)
         
-        # Parse JSON
+        logger.info(f"RAW OUTPUT: {response_text}")
+
+        # STABILIZED PARSING
+        import re
+        # Isolate the main JSON object
+        json_match = re.search(r'(\{.*\})', response_text, re.DOTALL)
+        clean_json = json_match.group(1) if json_match else "{}"
+
+        # Sanitize common model mess-ups
+        clean_json = re.sub(r'//.*', '', clean_json) # strip // comments
+        clean_json = re.sub(r',\s*([\]\}])', r'\1', clean_json) # fix trailing commas
+        
         try:
-            extracted_json = json.loads(response_text)
-        except:
-            logger.warning("Model produced invalid JSON. Attempting cleanup.")
-            extracted_json = {"error": "Invalid JSON format", "raw": response_text}
+            extracted = json.loads(clean_json)
+            # Schema normalization
+            keys = {"patient_name": "", "age": "", "diagnosis": "", "medications": [], "symptoms": []}
+            for k, default in keys.items():
+                if k not in extracted: extracted[k] = default
+            
+            val_res = judge.validate(request.text, extracted)
+            result = {
+                "extracted": extracted,
+                "validation": val_res,
+                "latency": time.time() - start_time,
+                "status": "success"
+            }
+        except Exception as e:
+            logger.error(f"Stabilization failed: {e}")
+            result = {
+                "extracted": {"patient_name": "Structure Error", "age": "", "diagnosis": "Malformed output", "medications": [], "symptoms": []},
+                "validation": {"verdict": "FAIL", "issues": ["Model structural failure"]},
+                "latency": time.time() - start_time
+            }
 
-        # Run Validation for Logging
-        val_res = judge.validate(request.text, extracted_json)
-        
-        # Log for Observability
-        observer.log_inference(request.text, extracted_json, val_res)
+        observer.log_inference(request.text, result.get("extracted", {}), result.get("validation", {}), latency_sec=result["latency"])
+        return result
 
-        return {
-            "input": request.text,
-            "context": context,
-            "extracted": extracted_json,
-            "validation": val_res
-        }
     except Exception as e:
-        logger.error(f"Extraction failed: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Backend Error: {e}")
+        raise HTTPException(status_code=500, detail="Inference Failed")
 
 @app.post("/validate")
 async def validate_extraction(data: dict):
@@ -114,17 +158,23 @@ async def validate_extraction(data: dict):
 
 @app.get("/metrics")
 async def get_latest_metrics():
-    logger.info("Fetching latest evaluation metrics.")
+    logger.info("Fetching live session metrics.")
     try:
-        metrics_path = "evaluation/results/medaudit_latest.json"
-        if os.path.exists(metrics_path):
-            with open(metrics_path, "r") as f:
-                return json.load(f)
-        else:
-            return {"status": "No evaluation data found. Run evaluation script first."}
+        # Return dynamic session metrics instead of static file
+        return observer.get_session_metrics()
     except Exception as e:
         logger.error(f"Metrics fetch failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/reset")
+async def reset_session():
+    try:
+        observer.reset_session()
+        logger.info("Session metrics and logs cleared by user.")
+        return {"status": "success", "message": "Global session metrics reset."}
+    except Exception as e:
+        logger.error(f"Reset failed: {e}")
+        raise HTTPException(status_code=500, detail="Reset failed")
 
 if __name__ == "__main__":
     import uvicorn

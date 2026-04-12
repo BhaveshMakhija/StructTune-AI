@@ -1,28 +1,56 @@
-# Python cache
+# Python
 __pycache__/
-*.pyc
-*/__pycache__/
-
-# Virtual Environment
-venv/
-.venv/
+*.py[cod]
+*$py.class
+*.so
+.Python
 env/
+.venv/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+*.mo
+*.pot
+*.log
+local_settings.py
+db.sqlite3
+instance/
+.webassets-cache
+.flaskenv
+.env
+.venv
+results/
+**/results/
 
-# Data & Models
-data/dataset.jsonl
+# Models & Data
 models/
-output/
+data/dataset.jsonl
+*.pt
+*.bin
+*.gguf
 
-# Frontend
+# Node / Frontend
 node_modules/
 dist/
 build/
-.npm/
-.yarn/
+.npm
+.eslintcache
+.stylelintcache
 package-lock.json
+yarn.lock
+.env.local
 
-# Test Artifacts
-.pytest_cache/
-tests/
-test_results/
-evaluation/results/
+# Project Specific
+logs/
+eval_error.txt
+test_load.py
+tmp/
+.ipynb_checkpoints/
